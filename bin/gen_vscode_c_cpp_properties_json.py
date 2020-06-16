@@ -27,7 +27,7 @@ def main():
 
     try:
         with open(args.output, "w") as f:
-            json.dump(json_root, f)
+            json.dump(json_root, f, indent=4)
     except IOError as ex:
         eprint(f"Error while writing output JSON file: {ex}")
 
