@@ -10,7 +10,6 @@ all:
 .PHONY: vscode_c_cpp_properties
 vscode_c_cpp_properties:
 	mkdir -p $(VSCODE_CONFIG_DIR)
-	rm -f $(VSCODE_C_CPP_PROPERTIES_FILE)
 	gen_vscode_c_cpp_properties_json.py \
 		--output=$(VSCODE_C_CPP_PROPERTIES_FILE) \
 		--cc=$(shell which $(CC)) \
