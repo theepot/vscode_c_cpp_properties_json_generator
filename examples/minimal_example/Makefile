@@ -2,6 +2,7 @@ VSCODE_CONFIG_DIR := .vscode
 VSCODE_C_CPP_PROPERTIES_FILE := $(VSCODE_CONFIG_DIR)/c_cpp_properties.json
 
 CXXFLAGS := -Isrc
+CFLAGS := -std=gnu99
 
 .PHONY: all
 all:
